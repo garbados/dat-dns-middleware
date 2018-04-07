@@ -1,0 +1,4 @@
+.dat
+node_modules/
+.nyc_output/
+test-fixtures/.dat
