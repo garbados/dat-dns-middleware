@@ -3,10 +3,10 @@
 const Dat = require('dat-node')
 
 /**
- * [exports description]
- * @param  {[type]} dir [description]
- * @param  {Number} ttl [description]
- * @return {[type]}     [description]
+ * The dat-dns-middleware middleware generator!
+ * @param  {String} dir Directory to use as a Dat archive.
+ * @param  {Number} ttl TTL for the DNS listing.
+ * @return {Function}   The middleware function: `function (req, res, next) { ... }`
  */
 module.exports = function (dir, ttl = 3600) {
   // retrieve the files as an archive
