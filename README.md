@@ -72,7 +72,7 @@ Parameters:
 
 ## Development
 
-Download the source with [git]() and run the test suite with npm:
+Download the source with [git](https://git-scm.com/) and run the test suite with npm:
 
 ```
 git clone https://github.com/garbados/dat-dns-middleware
