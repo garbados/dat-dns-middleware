@@ -1,6 +1,6 @@
 {
   "name": "dat-dns-middleware",
-  "version": "1.0.1-alpha",
+  "version": "1.0.2-alpha",
   "description": "Middleware for Connect and Express to serve static files over the Dat network.",
   "main": "index.js",
   "scripts": {
