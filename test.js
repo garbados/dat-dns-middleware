@@ -49,7 +49,7 @@ describe('dat-dns-middleware', function () {
       return httpGet(url).then(function ([req, res, body]) {
         const [ key, ttl ] = body.match(bodyRegex).slice(1, 3)
         assert(key) // just wanna make sure it exists? i guess??
-        assert.equal(ttl, 3600)
+        assert.strictEqual(ttl, '3600')
       })
     }
     return [testHandler, testHandler].reduce(function (a, b) {
@@ -61,7 +61,7 @@ describe('dat-dns-middleware', function () {
     const url = 'http://127.0.0.1:3000'
     const expected = '<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /</pre>\n</body>\n</html>\n'
     return httpGet(url).then(function ([req, res, body]) {
-      assert.equal(body, expected)
+      assert.strictEqual(body, expected)
     })
   })
 })
